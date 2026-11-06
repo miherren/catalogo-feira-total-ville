@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a Feira do Total Ville: gastronomia, artesanato, variedades e lazer para toda a família.">
+  <title>Feira do Total Ville | Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Página inicial da Feira do Total Ville">
+      <span class="brand-icon">✳</span>
+      <span>Feira <small>do Total Ville</small></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre a feira</a>
+      <a href="#visite">Como visitar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">SEXTA-FEIRA É DIA DE FEIRA</span>
+        <h1>Sabores, encontros<br>e coisas boas <em>por perto.</em></h1>
+        <p>Explore o que a Feira do Total Ville tem para oferecer. Encontre comidas, produtos locais, artesanato e opções de lazer para curtir com a família.</p>
+        <a class="primary-button" href="#catalogo">Explorar catálogo <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de uma feira">
+        <div class="sun"></div>
+        <div class="market-card card-one"><span>🍰</span><b>Doces</b></div>
+        <div class="market-card card-two"><span>🧺</span><b>Artesanato</b></div>
+        <div class="market-card card-three"><span>🍲</span><b>Comida boa</b></div>
+        <div class="market-stall"><div class="awning"></div><div class="stall-body"><span>FEIRA</span><small>DO TOTAL VILLE</small></div></div>
+        <div class="plant plant-left">✿</div><div class="plant plant-right">✿</div>
+      </div>
+    </section>
+
+    <section class="intro" id="sobre">
+      <div>
+        <span class="eyebrow">COMÉRCIO LOCAL • COMUNIDADE • SUSTENTABILIDADE</span>
+        <h2>Um lugar para descobrir<br>e valorizar o que é local.</h2>
+      </div>
+      <p>A feira reúne comerciantes, produtores e visitantes em um espaço de convivência. Este catálogo digital é uma forma simples de conhecer as opções disponíveis e facilitar a divulgação dos pequenos negócios.</p>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">ENCONTRE O QUE PROCURA</span>
+          <h2>Explore a feira</h2>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Buscar produtos ou atividades..." aria-label="Buscar no catálogo">
+        </label>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrar categorias">
+        <button class="filter active" data-filter="todos">Tudo</button>
+        <button class="filter" data-filter="gastronomia">🍴 Gastronomia</button>
+        <button class="filter" data-filter="variedades">🎨 Variedades e artesanato</button>
+        <button class="filter" data-filter="lazer">🎈 Lazer e família</button>
+      </div>
+
+      <div class="catalog-grid" id="catalogGrid" aria-live="polite">
+        <article class="item-card" data-category="gastronomia" data-search="arroz carreteiro prato típico comida">
+          <div class="item-visual food-1"><span>🍲</span><small>PRATO TÍPICO</small></div>
+          <div class="item-info"><span class="tag">GASTRONOMIA</span><h3>Arroz carreteiro</h3><p>Uma opção saborosa para aproveitar a feira.</p><span class="item-note">Consulte a barraca para disponibilidade.</span></div>
+        </article>
+        <article class="item-card" data-category="gastronomia" data-search="salgados lanches pastel comida">
+          <div class="item-visual food-2"><span>🥟</span><small>LANCHES</small></div>
+          <div class="item-info"><span class="tag">GASTRONOMIA</span><h3>Lanches e salgados</h3><p>Opções práticas para comer por ali ou levar.</p><span class="item-note">Consulte as opções do dia.</span></div>
+        </article>
+        <article class="item-card" data-category="gastronomia" data-search="bolo doces sobremesas">
+          <div class="item-visual food-3"><span>🍰</span><small>FEITO COM CARINHO</small></div>
+          <div class="item-info"><span class="tag">GASTRONOMIA</span><h3>Bolos e sobremesas</h3><p>Doces para adoçar o passeio e compartilhar.</p><span class="item-note">Sabores variam conforme a barraca.</span></div>
+        </article>
+        <article class="item-card" data-category="gastronomia" data-search="comidas diversas pratos típicos">
+          <div class="item-visual food-4"><span>🍛</span><small>COMIDA DE FEIRA</small></div>
+          <div class="item-info"><span class="tag">GASTRONOMIA</span><h3>Comidas diversas</h3><p>Descubra outros pratos e sabores disponíveis.</p><span class="item-note">Consulte o cardápio no local.</span></div>
+        </article>
+        <article class="item-card" data-category="variedades" data-search="artesanato decoração feito à mão">
+          <div class="item-visual craft-1"><span>🧶</span><small>PRODUÇÃO LOCAL</small></div>
+          <div class="item-info"><span class="tag">VARIEDADES E ARTESANATO</span><h3>Artesanato</h3><p>Peças criativas e trabalhos feitos à mão.</p><span class="item-note">Peças e valores sob consulta.</span></div>
+        </article>
+        <article class="item-card" data-category="variedades" data-search="decoração casa presentes">
+          <div class="item-visual craft-2"><span>🏺</span><small>PARA SUA CASA</small></div>
+          <div class="item-info"><span class="tag">VARIEDADES E ARTESANATO</span><h3>Artigos de decoração</h3><p>Detalhes para deixar os ambientes com personalidade.</p><span class="item-note">Consulte os modelos disponíveis.</span></div>
+        </article>
+        <article class="item-card" data-category="variedades" data-search="perfumaria beleza cuidados">
+          <div class="item-visual craft-3"><span>🧴</span><small>AUTOCUIDADO</small></div>
+          <div class="item-info"><span class="tag">VARIEDADES E ARTESANATO</span><h3>Perfumaria</h3><p>Produtos de cuidado pessoal e perfumaria.</p><span class="item-note">Consulte marcas e opções na barraca.</span></div>
+        </article>
+        <article class="item-card" data-category="lazer" data-search="crianças família espaço infantil">
+          <div class="item-visual fun-1"><span>🎠</span><small>PARA OS PEQUENOS</small></div>
+          <div class="item-info"><span class="tag">LAZER E FAMÍLIA</span><h3>Espaço para crianças</h3><p>Um passeio para aproveitar também com os pequenos.</p><span class="item-note">Atividades conforme a programação.</span></div>
+        </article>
+        <article class="item-card" data-category="lazer" data-search="música ao vivo atrações evento">
+          <div class="item-visual fun-2"><span>🎶</span><small>PROGRAMAÇÃO</small></div>
+          <div class="item-info"><span class="tag">LAZER E FAMÍLIA</span><h3>Música e atrações</h3><p>Apresentações e atividades eventuais para animar o encontro.</p><span class="item-note">Consulte a programação da semana.</span></div>
+        </article>
+        <article class="item-card" data-category="lazer" data-search="convivência encontro família amigos">
+          <div class="item-visual fun-3"><span>🧡</span><small>BOM ENCONTRO</small></div>
+          <div class="item-info"><span class="tag">LAZER E FAMÍLIA</span><h3>Espaço de convivência</h3><p>Um ambiente para encontrar pessoas e aproveitar a feira.</p><span class="item-note">Venha curtir com respeito ao espaço coletivo.</span></div>
+        </article>
+      </div>
+      <p class="empty-message" id="emptyMessage" hidden>Nenhum resultado encontrado. Tente outra busca.</p>
+      <p class="demo-note">Catálogo demonstrativo: os itens representam categorias da feira. Produtos, preços, horários e programação devem ser confirmados com os comerciantes e organização.</p>
+    </section>
+
+    <section class="sustainability">
+      <div class="sustain-icon">♻</div>
+      <div><span class="eyebrow">UM OLHAR SUSTENTÁVEL</span><h2>Divulgar também pode ajudar a evitar desperdícios.</h2><p>Com informações digitais atualizadas, comerciantes podem destacar ofertas e produtos que precisam ser vendidos no dia. Assim, mais pessoas conhecem as oportunidades e os pequenos negócios ganham visibilidade.</p></div>
+    </section>
+
+    <section class="visit" id="visite">
+      <span class="eyebrow">PROGRAME SEU PASSEIO</span>
+      <h2>Encontro marcado na feira!</h2>
+      <p>Feira de sexta-feira • Setor Total Ville<br>Santa Maria – DF</p>
+      <span class="visit-note">Confirme horário e programação com a organização antes de visitar.</span>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#inicio"><span class="brand-icon">✳</span><span>Feira <small>do Total Ville</small></span></a>
+    <p>Projeto acadêmico demonstrativo sobre tecnologia, comércio local e sustentabilidade.</p>
+    <a href="#inicio" class="back-top">Voltar ao início ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
